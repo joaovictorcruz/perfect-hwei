@@ -37,6 +37,3 @@ while True:
         break
     else:
         print("Esse campeão não existe na lista, tente novamente.")
-
-        
-    
