@@ -41,5 +41,6 @@ body {
     width: 550px;
     height: 40px;
     border-radius: 15px;
-    border: none
+    border: none;
+    text-align: center;
 }
