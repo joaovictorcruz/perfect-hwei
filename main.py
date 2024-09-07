@@ -8,9 +8,9 @@ counter_assassin = ("seraph", "zhonyas")
 counter_tank = ("liandry", "void")
 
 
-champions = input("Digite seu campeão: ").lower()
+while True:
+    champions = input("Digite seu campeão: ").lower()
 
-for champion in champions:
     # Verificar se o campeão está nas listas
     is_tank = champions in list_tank
     is_assassin = champions in list_assassin
@@ -37,4 +37,6 @@ for champion in champions:
         break
     else:
         print("Esse campeão não existe na lista, tente novamente.")
+
+        
     
