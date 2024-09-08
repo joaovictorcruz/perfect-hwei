@@ -1,7 +1,9 @@
 body {
     background: linear-gradient(
-        rgb(96, 175, 242),
-          rgb(139, 151, 253)
+        to bottom,
+        rgb(52, 121, 180),
+        rgb(113, 7, 105),
+        #6325b9
     );
     display: flex;
     justify-content: center; 
@@ -25,10 +27,12 @@ body {
 .title {
     font-family: inherit;
     font-size: 36px;
+    color: white;
 }
 
-.span {
+span {
     font-family: inherit;
+    color: white;
 }
 
 .champion-selector{
