@@ -63,3 +63,35 @@ span {
     text-align: center;
     font-family: "Inter";
 }
+.nav-bar{
+    display: flex;
+    width: 98vw;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    
+}
+.nav-img {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    padding-inline: 35px;
+}
+.nav-bar img{
+    transition-duration: 300ms;
+}
+.nav-bar img:hover{
+    opacity: 0.5;
+    width: 80px;
+    height: 80px;
+    padding: 7px;
+    padding-inline: 32px;
+    
+}
+
+@media (width < 800px) {
+    .enter-text{
+        width: 100%;
+    }
+}
