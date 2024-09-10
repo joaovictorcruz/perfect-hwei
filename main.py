@@ -1,3 +1,8 @@
+from flask import Flask
+app = Flask(__name__)
+
+app.run(debug=True)
+
 # Listas de campeões
 list_tank = ["rammus", "galio", "malphite"]
 list_assassin = ["rammus", "zed"]
