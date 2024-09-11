@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/templates/style.css">
+    <link rel="stylesheet" href="/static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -11,8 +11,8 @@
 </head>
 <body>
     <div class="nav-bar">
-        <a href="https://github.com/joaovictorcruz"><img src="/images/gitpic.png" class="nav-img"></img></a>
-        <a href="https://www.linkedin.com/in/joão-victor-cruz-silva-b80425264"><img src="/images/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.webp" class="linkedin" alt="LinkedIn"></a>
+        <a href="https://github.com/joaovictorcruz"><img src="/static/images/gitpic.png" class="nav-img"></img></a>
+        <a href="https://www.linkedin.com/in/joão-victor-cruz-silva-b80425264"><img src="/static/images/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.webp" class="linkedin" alt="LinkedIn"></a>
     </div>
     <div class="background-img"></div>
     <div class="center-box">
@@ -21,7 +21,9 @@
     </div>
     <div class="champion-selector">
         <input class="enter-text" type="text" id="champion" placeholder="Digite o campeão inimigo"/>
+        <button id="searchButton">Buscar Build</button>
     </div>
-<script src="/main.js"></script>     
+    <div id="result"></div> <!-- Div onde o resultado será exibido -->
+<script src="/static/main.js"></script>     
 </body>
 </html>
