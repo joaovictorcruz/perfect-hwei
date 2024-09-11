@@ -66,28 +66,42 @@ span {
 .nav-bar{
     display: flex;
     width: 98vw;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
     position: absolute;
     top: 0;
-    
 }
 .nav-img {
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
     padding: 10px;
     padding-inline: 35px;
-}
-.nav-bar img{
     transition-duration: 300ms;
 }
-.nav-bar img:hover{
+
+.nav-img:hover{
+    opacity: 0.5;
+    width: 60px;
+    height: 60px;
+    padding: 7px;
+    padding-inline: 32px;
+    
+}
+
+.linkedin {
+    width: 73px;
+    height: 73px;
+    padding: 10px;
+    padding-inline: -91px;
+    transition-duration: 300ms;
+}
+
+.linkedin:hover{
     opacity: 0.5;
     width: 80px;
     height: 80px;
     padding: 7px;
-    padding-inline: 32px;
-    
+    padding-inline: -88px;
 }
 
 @media (width < 800px) {
