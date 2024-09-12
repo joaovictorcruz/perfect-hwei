@@ -11,10 +11,10 @@ function getBuild() {
     .then(response => response.json())
     .then(data => {
         const resultDiv = document.getElementById('result');
-        resultDiv.innerHTML = '<h3>Build Recomendada: </h3>';
+        resultDiv.innerHTML = '<h3 class="slide-in">Build Recomendada: </h3>';
 
         const container = document.createElement('div');
-        container.classList.add('result-container');
+        container.classList.add('result-container', 'slide-in');
 
         data.build.forEach(item => {
             const itemName = item[0];

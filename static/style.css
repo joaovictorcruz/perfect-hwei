@@ -51,7 +51,7 @@ span {
 .enter-text{
     width: 550px;
     height: 40px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: none;
     text-align: center;
     font-family: "Inter";
@@ -169,6 +169,23 @@ span {
     margin-bottom: 10px;
 }
 
+/*Animação de Deslizar*/
+.slide-in {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideIn 1.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 @media (width < 800px) {
     .enter-text{
