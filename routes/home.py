@@ -7,8 +7,9 @@ list_tank = ["rammus", "galio", "malphite"]
 list_assassin = ["rammus", "zed"]
 
 # Builds
-counter_assassin = ["seraph", "zhonyas"]
-counter_tank = ["liandry", "void"]
+default = [("luden", "/static/images/luden.png"), ("rabadon", "/static/images/rabadon.png")]
+counter_assassin = [("seraph", "/static/images/Cajado_do_Arcanjo_item.webp"), ("zhonyas", "/static/images/zhonias.png")]
+counter_tank = [("liandry", "/static/images/liandry.png"), ("void", "/static/images/cajadoVazio.png")]
 
 @home_route.route('/')
 def home():
