@@ -6,10 +6,11 @@ home_route = Blueprint('home', __name__)
 list_tank = ["rammus", "galio", "malphite"]
 list_assassin = ["rammus", "zed"]
 
-# Builds
-default = [("luden", "/static/images/luden.png"), ("rabadon", "/static/images/rabadon.png")]
-counter_assassin = [("seraph", "/static/images/Cajado_do_Arcanjo_item.webp"), ("zhonyas", "/static/images/zhonias.png")]
-counter_tank = [("liandry", "/static/images/liandry.png"), ("void", "/static/images/cajadoVazio.png")]
+builds = {
+    "default": [("luden", "/static/images/items/luden.png"), ("rabadon", "/static/images/items/rabadon.png")],
+    "counter_assassin": [("seraph", "/static/images/items/Cajado_do_Arcanjo_item.webp"), ("zhonyas", "/static/images/items/zhonias.png")],
+    "counter_tank": [("liandry", "/static/images/items/liandry.png"), ("void", "/static/images/items/cajadoVazio.png")]
+}
 
 @home_route.route('/')
 def home():
@@ -25,13 +26,13 @@ def get_build():
     is_assassin = champion in list_assassin
 
     if is_tank and is_assassin:
-        build = counter_tank + counter_assassin
+        build = builds["counter_tank"] + builds["counter_assassin"]
     elif is_tank:
-        build = counter_tank
+        build = builds["counter_tank"]
     elif is_assassin:
-        build = counter_assassin
+        build = builds["counter_assassin"]
     else:
-        build = ["luden", "rabadon"]  # Default build
+        build = builds["default"]  # Default build
 
     # Retorna a build como uma resposta JSON
     return jsonify({'build': build})
