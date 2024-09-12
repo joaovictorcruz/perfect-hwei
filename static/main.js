@@ -11,8 +11,17 @@ function getBuild() {
     .then(response => response.json())
     .then(data => {
         const resultDiv = document.getElementById('result');
-        resultDiv.innerHTML = `Build Recomendada: ${data.build.join(', ')}`;
+        resultDiv.innerHTML = 'Build Recomendada: ';
+    data.build.forEach(item => {
+        const itemName = item[0];
+        const itemImage = item[1];        
+
+    const itemDiv = document.createElement('div');
+          itemDiv.innerHTML = `<img src="${itemImage}" alt="${itemName}" style="width:50px; height:50px;"> ${itemName}`;
+          resultDiv.appendChild(itemDiv);
+        });
     })
+
     .catch(error => console.error('Erro:', error));
 }
 
