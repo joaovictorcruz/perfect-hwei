@@ -35,6 +35,7 @@ body {
     font-family: inherit;
     font-size: 36px;
     color: white;
+    text-shadow: 2px 4px 2px black;
 }
 
 span {
@@ -102,7 +103,7 @@ span {
 
 .bi-search{
     margin-left: 10px;
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 7px;
     font-size: 24px;
     color: white;
@@ -185,6 +186,23 @@ span {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+
+.rune-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px; /* Margem superior para separação das builds */
+    flex-wrap: wrap;  /* Permite que runas sejam organizadas em linha, se necessário */
+    background: rgba(0, 0, 0, 0.3); /* Fundo semi-transparente */
+}
+
+/* Estilo específico para as imagens de runas */
+.rune-img {
+    width: 520px; /* Tamanho da runa */
+    height: 298px;
+    margin: 5px; /* Espaçamento entre as runas */
 }
 
 @media (width < 800px) {

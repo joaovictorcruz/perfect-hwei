@@ -7,9 +7,14 @@ list_tank = ["rammus", "galio", "malphite"]
 list_assassin = ["rammus", "zed"]
 
 builds = {
-    "default": [("luden", "/static/images/items/luden.png"), ("rabadon", "/static/images/items/rabadon.png")],
-    "counter_assassin": [("seraph", "/static/images/items/Cajado_do_Arcanjo_item.webp"), ("zhonyas", "/static/images/items/zhonias.png")],
-    "counter_tank": [("liandry", "/static/images/items/liandry.png"), ("void", "/static/images/items/cajadoVazio.png")]
+    "default": [("luden", "static/images/items/luden.png"), ("rabadon", "/static/images/items/rabadon.png")],
+    "counter_assassin": [("seraph", "static/images/items/Cajado_do_Arcanjo_item.webp"), ("zhonyas", "/static/images/items/zhonias.png")],
+    "counter_tank": [("liandry", "static/images/items/liandry.png"), ("void", "/static/images/items/cajadoVazio.png")]
+}
+
+runes = {
+    "default": [("static/images/runes/runaimg-removebg-preview.png")],
+    "counter_assassin": [("static/images/runes/counter_assassin.png")]
 }
 
 @home_route.route('/')
@@ -27,12 +32,16 @@ def get_build():
 
     if is_tank and is_assassin:
         build = builds["counter_tank"] + builds["counter_assassin"]
+        rune = runes["default"]  # Escolha padrão se ambos se aplicam
     elif is_tank:
         build = builds["counter_tank"]
+        rune = runes["default"]
     elif is_assassin:
         build = builds["counter_assassin"]
+        rune = runes["counter_assassin"]
     else:
-        build = builds["default"]  # Default build
+        build = builds["default"]
+        rune = runes["default"]
 
-    # Retorna a build como uma resposta JSON
-    return jsonify({'build': build})
+    # Retorna a build e runas como uma resposta JSON
+    return jsonify({'build': build, 'rune': rune})
