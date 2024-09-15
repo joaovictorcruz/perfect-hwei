@@ -11,7 +11,7 @@ body {
 
 .background-img{
     position: absolute;
-    background-image: url('/static/images/WhatsApp\ Image\ 2024-09-11\ at\ 16.50.21.jpeg');
+    background-image: url('/static/images/backgroundhwei.jpeg');
     top: 0;
     left: 0;
     width: 100%;
@@ -69,34 +69,34 @@ span {
     top: 0;
 }
 .nav-img {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     padding: 10px;
-    padding-inline: 35px;
+    padding-inline: 10px;
     transition-duration: 300ms;
 }
 
 .nav-img:hover{
     opacity: 0.5;
-    width: 60px;
-    height: 60px;
-    padding: 7px;
-    padding-inline: 32px;
+    width: 50px;
+    height: 50px;
+    padding: 1px;
+    padding-inline: 8px;
     
 }
 
 .linkedin {
-    width: 73px;
-    height: 73px;
-    padding: 10px;
-    padding-inline: -91px;
+    width: 63px;
+    height: 63px;
+    padding: 11px;
+    padding-inline: -71px;
     transition-duration: 300ms;
 }
 
 .linkedin:hover{
     opacity: 0.5;
-    width: 80px;
-    height: 80px;
+    width: 71px;
+    height: 71px;
     padding: 7px;
     padding-inline: -88px;
 }
@@ -200,8 +200,8 @@ span {
 
 /* Estilo específico para as imagens de runas */
 .rune-img {
-    width: 520px; /* Tamanho da runa */
-    height: 298px;
+    width: 410px; /* Tamanho da runa */
+    height: 248px;
     margin: 5px; /* Espaçamento entre as runas */
 }
 
