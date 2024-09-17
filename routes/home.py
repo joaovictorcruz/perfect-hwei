@@ -3,8 +3,11 @@ from flask import Blueprint, render_template, request, jsonify
 home_route = Blueprint('home', __name__)
 
 # Listas de campeões
-list_tank = ["rammus", "galio", "malphite"]
-list_assassin = ["rammus", "zed"]
+list_bruiser = ["sylas", "irelia", "yone", "yasuo"]
+list_mage = ["orianna", "viktor", "aurelion sol", "vladmir", "veigar", "neeko", "syndra", "azir"]
+list_tank = ["galio", "malphite", "sion"]
+list_assassin = ["zed", "ahri", "akali", "annie", "diana", "fizz", "qyiana", "kassadin", "aurora"]
+list_ranged = ["jayce", "tristana", "corki", "zeri", "lucian", "smolder", "akshan", "ezreal"]
 
 builds = {
     "default": [("luden", "static/images/items/luden.png"), ("rabadon", "/static/images/items/rabadon.png")],
