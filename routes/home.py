@@ -8,14 +8,28 @@ list_mage = ["orianna", "viktor", "aurelion sol", "vladmir", "veigar", "neeko", 
 list_tank = ["galio", "malphite", "sion"]
 list_assassin = ["zed", "ahri", "akali", "annie", "diana", "fizz", "qyiana", "kassadin", "aurora"]
 list_ranged = ["jayce", "tristana", "corki", "zeri", "lucian", "smolder", "akshan", "ezreal"]
+list_default = [
+    "aatrox", "ahri", "akali", "alistar", "amumu", "anivia", "aphelios", "ashe", "bard", "blitzcrank", 
+    "brand", "braum", "caitlyn", "camille", "cassiopeia", "cho'gath", "dr. mundo", "draven", 
+    "ekko", "elise", "evelynn", "fiora", "gangplank", "gnar", "gragas", "graves", "hecarim", "illaoi", 
+    "ivern", "janna", "jax", "jhin", "jhinx", "kalista", "karma", "karthus", "katarina", "kayle", 
+    "kayne", "kennen", "kog'maw", "leblanc", "leesin", "leona", "lissandra", "lulu", "lux", 
+    "maestro yi", "maokai", "miss fortune", "mordekaiser", "morgana", "nami", "nasus", "nautilus", 
+    "nidalee", "nocturne", "nunu", "olaf", "ornn", "pantheon", "poppy", "pyke", "quinn", "rammus", 
+    "rek'sai", "renekton", "rengar", "riven", "ryze", "sejuani", "seraphine", "sett", "shaco", 
+    "shen", "shyvana", "singed", "skarner", "sona", "soraka", "swain", "tahm kench", "taliyah", 
+    "talon", "taric", "teemo", "thresh", "trundle", "tryndamere", "twisted fate", "twitch", 
+    "urgot", "varus", "vayne", "vex", "vi", "viego", "volibear", "warwick", "wukong", "xayah", 
+    "xerath", "yasuo", "yorick", "yuumi", "zac", "zilean", "zoe", "zyra"
+]
 
 builds = {
-    "default": [("Companheiro de Luden", "static/images/items/luden.png"), ("Botas Ionianas da Lucidez", ""), ("Foco do Horizonte", ""), ("Capuz da Morte de Rabadon", "/static/images/items/rabadon.png"), ("Criptoflora", ""), ("Véu de Banshee", "")],
-    "counter_assassin": [("Abraço de Seraph", "static/images/items/Cajado_do_Arcanjo_item.webp"), ("Botas Ionianas de Lucidez", ""), ("Zhonias", "/static/images/items/zhonias.png "), ("Rabadon", ""), ("Criptoflora", ""), ("Chama Sombria", "")],
-    "counter_tank": [("Abraço de Seraph", "static/images/items/Cajado_do_Arcanjo_item.webp"), ("Botas Ionianas de Lucidez", ""), ("Angústia de Liandry", "static/images/items/liandry.png"), ("Cajado do Vazio", "/static/images/items/cajadoVazio.png"), ("Capuz da Morte de Rabadon", "/static/images/items/rabadon.png"), ("Ladrão de Almas Mejai", "")],
-    "counter_bruiser": [("Abraço de Seraph", "static/images/items/Cajado_do_Arcanjo_item.webp"), ("Botas Galvanizadas de Aço", ""), ("Angústia de Liandry", "static/images/items/liandry.png"), ("Capuz da Morte de Rabadon", "/static/images/items/rabadon.png"),  ("Criptoflora", ""), ("Zhonias", "/static/images/items/zhonias.png ")],
-    "counter_mage": [("Companheiro de Luden", "static/images/items/luden.png"), ("Sapatos do Feiticeiro", ""), ("Ladrão de Almas Mejai", ""), ("Chama Sombria", ""), ("Capuz da Morte de Rabadon", "/static/images/items/rabadon.png"), ("Cajado do Vazio", "/static/images/items/cajadoVazio.png")], 
-    "counter_ranged": [("Tocha Sombria", ""), ("Botas Galvanizadas de Aço", ""), ("Foco do Horizonte", ""), ("Capuz da Morte de Rabadon", "/static/images/items/rabadon.png"), ("Criptoflora", ""), ("Criptoflora", "Ímpeto Cósmico")]
+    "default": [("Companheiro de Luden", "static/images/items/luden.png"), ("Botas Ionianas da Lucidez", "static/images/items/ionianas.png"), ("Foco do Horizonte", "static/images/items/focoHorizonte.png"), ("Capuz da Morte de Rabadon", "/static/images/items/rabadon.png"), ("Criptoflora", "static/images/items/criptoflora.png"), ("Véu de Banshee", "static/images/items/banshee.png")],
+    "counter_assassin": [("Abraço de Seraph", "static/images/items/Cajado_do_Arcanjo_item.webp"), ("Botas Ionianas de Lucidez", "static/images/items/ionianas.png"), ("Zhonias", "/static/images/items/zhonias.png "), ("Capuz da Morte de Rabadon", "/static/images/items/rabadon.png"), ("Criptoflora", "static/images/items/criptoflora.png"), ("Chama Sombria", "static/images/items/chama_sombria.png")],
+    "counter_tank": [("Abraço de Seraph", "static/images/items/Cajado_do_Arcanjo_item.webp"), ("Botas Ionianas de Lucidez", "static/images/items/ionianas.png"), ("Angústia de Liandry", "static/images/items/liandry.png"), ("Cajado do Vazio", "/static/images/items/cajadoVazio.png"), ("Capuz da Morte de Rabadon", "/static/images/items/rabadon.png"), ("Ladrão de Almas Mejai", "static/images/items/mejai.png")],
+    "counter_bruiser": [("Abraço de Seraph", "static/images/items/Cajado_do_Arcanjo_item.webp"), ("Botas Galvanizadas de Aço", "static/images/items/galvanizadas.png"), ("Angústia de Liandry", "static/images/items/liandry.png"), ("Capuz da Morte de Rabadon", "/static/images/items/rabadon.png"),  ("Criptoflora", "static/images/items/criptoflora.png"), ("Zhonias", "/static/images/items/zhonias.png ")],
+    "counter_mage": [("Companheiro de Luden", "static/images/items/luden.png"), ("Sapatos do Feiticeiro", "static/images/items/sapato_feiticeiro.png"), ("Ladrão de Almas Mejai", "static/images/items/mejai.png"), ("Chama Sombria", "static/images/items/chama_sombria.png"), ("Capuz da Morte de Rabadon", "/static/images/items/rabadon.png"), ("Cajado do Vazio", "/static/images/items/cajadoVazio.png")], 
+    "counter_ranged": [("Tocha Sombria", "static/images/items/tochaSombria.png"), ("Botas Galvanizadas de Aço", "static/images/items/galvanizadas.png"), ("Angústia de Liandry", "static/images/items/liandry.png"), ("Foco do Horizonte", "static/images/items/focoHorizonte.png"), ("Capuz da Morte de Rabadon", "/static/images/items/rabadon.png"), ("Criptoflora", "static/images/items/criptoflora.png")]
 }
 
 runes = {
@@ -43,6 +57,7 @@ def get_build():
     is_bruiser = champion in list_bruiser
     is_mage = champion in list_mage
     is_ranged = champion in list_ranged
+    is_default = champion in list_default
 
     if is_tank and is_assassin:
         build = builds["counter_tank"] + builds["counter_assassin"]

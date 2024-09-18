@@ -140,6 +140,7 @@ span {
 .item-container {
     display: flex;
     align-items: center;
+    position: relative;
     background: rgba(0, 0, 0, 0.3); /* Fundo semi-transparente */
     border-radius: 10px;
     padding: 10px;
@@ -162,6 +163,20 @@ span {
     font-family: 'Inter';
     color: white;
     margin-left: 10px;
+    position: absolute; /* Posiciona o nome sobre a imagem */
+    top: -30px; /* Muda para ficar acima da imagem */
+    left: 50%; /* Centraliza horizontalmente sobre o item */
+    transform: translateX(-50%); /* Corrige o alinhamento do centro */
+    opacity: 0; /* Invisível inicialmente */
+    transition: opacity 0.3s ease; /* Suave transição */
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto semi-transparente */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.item-container:hover .item-name {
+    opacity: 1;
 }
 
 .item-container {
@@ -187,7 +202,6 @@ span {
         opacity: 1;
     }
 }
-
 
 .rune-container {
     display: flex;
