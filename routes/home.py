@@ -51,17 +51,21 @@ def get_build():
     data = request.json
     champion = data.get('champion').lower()
 
+    # Verificar se o campeão existe em alguma das listas
+    all_champions = list_bruiser + list_mage + list_tank + list_assassin + list_ranged + list_default
+    if champion not in all_champions:
+        return jsonify({'error': 'Esse campeão não existe, tente novamente'})
+
     # Verificar a classificação do campeão
     is_tank = champion in list_tank
     is_assassin = champion in list_assassin
     is_bruiser = champion in list_bruiser
     is_mage = champion in list_mage
     is_ranged = champion in list_ranged
-    is_default = champion in list_default
 
     if is_tank and is_assassin:
         build = builds["counter_tank"] + builds["counter_assassin"]
-        rune = runes["default"]  # Escolha padrão se ambos se aplicam
+        rune = runes["default"]
     elif is_tank:
         build = builds["counter_tank"]
         rune = runes["counter_tank"]

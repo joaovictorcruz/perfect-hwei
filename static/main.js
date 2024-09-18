@@ -11,14 +11,24 @@ function getBuild() {
     })
     .then(response => response.json())
     .then(data => {
-        console.log('Dados recebidos:', data);
         const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = '';  // Limpa resultados anteriores
+
+        // Verifica se há um erro (campeão não existente)
+        if (data.error) {
+            const errorMessage = document.createElement('p');
+            errorMessage.textContent = data.error;
+            errorMessage.style.color = 'red';
+            resultDiv.appendChild(errorMessage);
+            return;
+        }
+
+        // Exibe a build
         resultDiv.innerHTML = '<h3 class="slide-in">Build Recomendada: </h3>';
 
         const buildContainer = document.createElement('div');
         buildContainer.classList.add('result-container', 'slide-in');
 
-        // Exibe a build
         data.build.forEach(item => {
             const itemName = item[0];
             const itemImage = item[1];
@@ -30,7 +40,7 @@ function getBuild() {
             imgElement.src = itemImage;
             imgElement.alt = itemName;
             imgElement.classList.add('item-img');
-            
+
             const itemText = document.createElement('span');
             itemText.textContent = itemName;
             itemText.classList.add('item-name');
@@ -40,12 +50,11 @@ function getBuild() {
             buildContainer.appendChild(itemContainer);
         });
 
-        // Adiciona o contêiner das builds ao resultado
         resultDiv.appendChild(buildContainer);
 
-        // Exibe as runas abaixo das builds
+        // Exibe as runas
         const runeContainer = document.createElement('div');
-        runeContainer.classList.add('rune-container', 'slide-in');  // Nova classe para runas
+        runeContainer.classList.add('rune-container', 'slide-in');
 
         data.rune.forEach(rune => {
             const runeImage = rune;
@@ -53,12 +62,11 @@ function getBuild() {
             const runeImgElement = document.createElement('img');
             runeImgElement.src = runeImage;
             runeImgElement.alt = 'Runa';
-            runeImgElement.classList.add('rune-img');  // Classe específica para runas
+            runeImgElement.classList.add('rune-img');
 
             runeContainer.appendChild(runeImgElement);
         });
 
-        // Adiciona o contêiner das runas ao resultado, abaixo das builds
         resultDiv.appendChild(runeContainer);
     })
     .catch(error => console.error('Erro:', error));
