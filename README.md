@@ -17,19 +17,16 @@ Tecnologias Utilizadas
 Instruções de Instalação
 1. Clonar o Repositório
 Baixe ou clone o repositório do projeto para sua máquina:
+```git clone https://github.com/seu-usuario/seu-repositorio.git```
 
 2. Instalar o Flask
 Após clonar o repositório, navegue até a pasta do projeto no terminal e instale o Flask diretamente usando o seguinte comando:
-
-pip install flask
+```pip install flask```
 
 3. Executar o Projeto
 Dentro da pasta do projeto, execute o seguinte comando para rodar o servidor Flask:
-
-
-python main.py
+```python main.py```
 
 4. Acessar o Site
 Após rodar o servidor, abra o navegador e acesse:
-
-http://127.0.0.1:5000/
+```http://127.0.0.1:5000/```
