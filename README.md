@@ -1,14 +1,14 @@
-### perfect-hwei
+perfect-hwei
 Esse é um projeto pessoal web,que consiste em gerar a melhor build
 do campeão hwei baseado no campeão adversário.
  
-###Funcionalidades
+uncionalidades
 
 Busca de campeões através de um campo de entrada.
 Exibição de builds e runas recomendadas de acordo com o campeão pesquisado.
 Alerta caso o campeão digitado não exista nas listas predefinidas.
 
-###Tecnologias Utilizadas
+Tecnologias Utilizadas
 
 •Python: Back-end
 
@@ -21,6 +21,7 @@ Alerta caso o campeão digitado não exista nas listas predefinidas.
 •JSON: Transferência de dados entre o frontend e o backend.
 
 Instruções de Instalação
+
 #1. Clonar o Repositório
 Baixe ou clone o repositório do projeto para sua máquina:
 
