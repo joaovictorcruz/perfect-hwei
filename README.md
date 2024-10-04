@@ -1,8 +1,7 @@
-perfect-hwei
 Esse é um projeto pessoal web,que consiste em gerar a melhor build
 do campeão hwei baseado no campeão adversário.
  
-uncionalidades
+Funcionalidades
 
 Busca de campeões através de um campo de entrada.
 Exibição de builds e runas recomendadas de acordo com o campeão pesquisado.
