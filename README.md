@@ -1,7 +1,6 @@
-### Esse é um projeto pessoal web do jogo League of Legends,que consiste em gerar a melhor build
-### do campeão hwei baseado no campeão adversário.
+### Esse é um projeto pessoal web do jogo League of Legends,que consiste em gerar a melhor build do campeão hwei baseado no campeão adversário.
  
-### Funcionalidades
+<h2>Funcionalidades</h2>
 
 Busca de campeões através de um campo de entrada.
 
@@ -9,7 +8,7 @@ Exibição de builds e runas recomendadas de acordo com o campeão pesquisado.
 
 Alerta caso o campeão digitado não exista nas listas predefinidas.
 
-### Tecnologias Utilizadas
+<h2>Tecnologias Utilizadas</h2>
 
 •Python: Back-end
 
@@ -21,24 +20,25 @@ Alerta caso o campeão digitado não exista nas listas predefinidas.
 
 •JSON: Transferência de dados entre o frontend e o backend.
 
-### Instruções de Instalação
+<h2>Instruções de Instalação</h2>
 
-#1. Clonar o Repositório
-Baixe ou clone o repositório do projeto para sua máquina:
+1. Clonar o Repositório
 
-```git clone https://github.com/seu-usuario/seu-repositorio.git```
+### Baixe ou clone o repositório do projeto para sua máquina:
+    git clone https://github.com/seu-usuario/seu-repositorio.git
 
 2. Instalar o Flask
-Após clonar o repositório, navegue até a pasta do projeto no terminal e instale o Flask diretamente usando o seguinte comando:
-
-```pip install flask```
+   
+### Após clonar o repositório, navegue até a pasta do projeto no terminal e instale o Flask diretamente usando o seguinte comando:
+    pip install flask
 
 3. Executar o Projeto
-Dentro da pasta do projeto, execute o seguinte comando para rodar o servidor Flask:
 
-```python main.py```
+### Dentro da pasta do projeto, execute o seguinte comando para rodar o servidor Flask:
+    python main.py
 
 4. Acessar o Site
-Após rodar o servidor, abra o navegador e acesse:
 
-```http://127.0.0.1:5000/```
+### Após rodar o servidor, abra o navegador e acesse:
+    http://127.0.0.1:5000/
+
