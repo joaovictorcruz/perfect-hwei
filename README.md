@@ -1,4 +1,4 @@
-### Esse é um projeto pessoal web,que consiste em gerar a melhor build
+### Esse é um projeto pessoal web do jogo League of Legends,que consiste em gerar a melhor build
 ### do campeão hwei baseado no campeão adversário.
  
 ### Funcionalidades
